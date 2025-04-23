@@ -57,6 +57,6 @@ func init() {
 	rootCmd.AddCommand(yamlTreeCmd)
 	//rootCmd.AddCommand(versionCmd)
 
-	rootCmd.PersistentFlags().BoolVarP(&debugFlag, "debug", "d", false, "Enable debugging logging")
+	rootCmd.PersistentFlags().BoolVarP(&debugFlag, "debug", "b", false, "Enable debugging logging")
 	rootCmd.PersistentFlags().StringVarP(&awsRegion, "region", "r", "", "AWS region to use (overrides default profile)")
 }
