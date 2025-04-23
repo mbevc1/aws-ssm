@@ -1,0 +1,17 @@
+debug: true
+app_name: my-service
+timeout_seconds: 2.5
+
+db:
+  host: localhost
+  port: 5432
+  user: admin
+  password: supersecret
+
+api:
+  token: abc123xyz
+  endpoint: https://api.example.com
+
+servers:
+  - web-1.local
+  - web-2.local
