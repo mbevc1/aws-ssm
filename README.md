@@ -79,6 +79,26 @@ aws-ssm-util tree -p /myapp
 aws-ssm-util yaml-tree -f config.yaml
 ```
 
+#### Example output
+
+```yaml
+root
+└── api
+    ├── endpoint = https://api.example.com
+    ├── token 🔒 = abc123xyz
+└── app_name = my-service
+└── db
+    ├── host = localhost
+    ├── password 🔒 = supersecret
+    ├── port = 5432
+    ├── user = admin
+└── debug = true
+└── servers
+    ├── 0 = web-1.local
+    ├── 1 = web-2.local
+└── timeout_seconds = 2.5
+```
+
 ---
 
 ## 🔐 SecureString Support
