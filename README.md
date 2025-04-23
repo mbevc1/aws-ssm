@@ -1,3 +1,5 @@
+[![Build](https://github.com/mbevc1/aws-ssm-util/actions/workflows/build.yaml/badge.svg)](https://github.com/mbevc1/aws-ssm-util/actions/workflows/build.yaml)
+
 # aws-ssm-util
 
 A lightweight, user-friendly CLI tool for managing AWS Systems Manager (SSM) Parameter Store using YAML config files. It supports uploading, downloading, deleting, tree visualization, and secure secret handling with smart heuristics.
