@@ -26,18 +26,12 @@ A lightweight, user-friendly CLI tool for managing AWS Systems Manager (SSM) Par
 2. Run `aws-ssm-util -v` to check if it's working correctly.
 3. Enjoy!
 
-or manually build using:
+or build manually using:
 
 ```bash
 git clone https://github.com/mbevc1/aws-ssm-util.git
 cd aws-ssm-util
-make build VERSION=v0.1.0
-```
-
-Or install globally:
-
-```bash
-go install github.com/mbevc1/aws-ssm-util@latest
+make build
 ```
 
 ---
@@ -49,7 +43,7 @@ go install github.com/mbevc1/aws-ssm-util@latest
 aws-ssm-util load -f config.yaml -p /myapp
 ```
 
-### Load with all secrets
+### Load with all as secrets
 ```bash
 aws-ssm-util load -f secrets.yaml -p /secure --secure
 ```
@@ -155,5 +149,3 @@ Full contributing [guidelines are covered here](.github/CONTRIBUTING.md).
 
 MPL-2.0 Licensed. See [LICENSE](LICENSE) for full details.
 <!-- https://choosealicense.com/licenses/ -->
-
-Built with ❤️  by [Marko Bevc](https://github.com/mbevc1).
