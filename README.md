@@ -15,8 +15,7 @@ A lightweight, user-friendly CLI tool for managing AWS Systems Manager (SSM) Par
 - 🔄 Round-trip safe: YAML to SSM and back
 - 🗑️ Delete parameters based on YAML keys
 - 🎨 Colored CLI output with SecureString locks (🔒)
-- ⚙️ Bash and Zsh autocompletions
-- � version support with `--version` or `-v`
+- ⚙️  Shell autocompletions
 
 ---
 
@@ -37,16 +36,6 @@ make build
 ---
 
 ## 🧪 Example Usage
-
-### Load
-```bash
-aws-ssm-util load -f config.yaml -p /myapp
-```
-
-### Load with all as secrets
-```bash
-aws-ssm-util load -f secrets.yaml -p /secure --secure
-```
 
 ### Load with smart secret detection
 ```bash
@@ -103,7 +92,7 @@ root
 
 ---
 
-## 🧩 Bash & Zsh Completion
+## 🧩 Shell Completion
 
 ### Bash
 ```bash
@@ -120,21 +109,7 @@ aws-ssm-util completion zsh > ${fpath[1]}/_aws-ssm-util
 
 ---
 
-## 🧰 Example YAML File
-
-```yaml
-debug: true
-db:
-  host: localhost
-  password: mysecret
-servers:
-  - web1
-  - web2
-```
-
----
-
-## Contributing
+## 🧰 Contributing
 
 Report issues/questions/feature requests on in the [issues](https://github.com/mbevc1/aws-ssm-util/issues/new) section.
 
