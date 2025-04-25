@@ -13,7 +13,7 @@ GO:=            go
 GO_BUILD:=      go build -mod mod -ldflags "-s -w -X main.commit=${GHASH} -X main.version=${VERSION}"
 #VERSION="${VERSION}" goreleaser --snapshot --rm-dist
 GO_VENDOR:=     go mod vendor
-BIN:=           aws-ssm-util
+BIN:=           aws-ssm
 
 help: ## Show help for each Makefile target
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "🎯 \033[36m%-15s\033[0m %s\n", $$1, $$2}'

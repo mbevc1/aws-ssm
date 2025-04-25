@@ -1,4 +1,4 @@
-module aws-ssm-util
+module aws-ssm
 
 go 1.24
 

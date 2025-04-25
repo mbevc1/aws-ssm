@@ -10,7 +10,7 @@ import (
 
 // Name & Version of the app
 var (
-	Name    = "aws-ssm-util"
+	Name    = "aws-ssm"
 	Version string
 )
 

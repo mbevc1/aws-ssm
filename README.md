@@ -1,6 +1,6 @@
-[![Build](https://github.com/mbevc1/aws-ssm-util/actions/workflows/build.yaml/badge.svg)](https://github.com/mbevc1/aws-ssm-util/actions/workflows/build.yaml)
+[![Build](https://github.com/mbevc1/aws-ssm/actions/workflows/build.yaml/badge.svg)](https://github.com/mbevc1/aws-ssm/actions/workflows/build.yaml)
 
-# aws-ssm-util
+# aws-ssm
 
 A lightweight, user-friendly CLI tool for managing AWS Systems Manager (SSM) Parameter Store using YAML config files. It supports uploading, downloading, deleting, tree visualization, and secure secret handling with smart heuristics.
 
@@ -21,15 +21,15 @@ A lightweight, user-friendly CLI tool for managing AWS Systems Manager (SSM) Par
 
 ## 💶 Installation
 
-1. Download from the [releases](https://github.com/mbevc1/aws-ssm-util/releases)
-2. Run `aws-ssm-util -v` to check if it's working correctly.
+1. Download from the [releases](https://github.com/mbevc1/aws-ssm/releases)
+2. Run `aws-ssm -v` to check if it's working correctly.
 3. Enjoy!
 
 or build manually using:
 
 ```bash
-git clone https://github.com/mbevc1/aws-ssm-util.git
-cd aws-ssm-util
+git clone https://github.com/mbevc1/aws-ssm.git
+cd aws-ssm
 make build
 ```
 
@@ -39,27 +39,27 @@ make build
 
 ### Load with smart secret detection
 ```bash
-aws-ssm-util load -f config.yaml -p /myapp --smart-secure
+aws-ssm load -f config.yaml -p /myapp --smart-secure
 ```
 
 ### Save
 ```bash
-aws-ssm-util save -p /myapp -o downloaded.yaml
+aws-ssm save -p /myapp -o downloaded.yaml
 ```
 
 ### Delete
 ```bash
-aws-ssm-util delete -f config.yaml -p /myapp
+aws-ssm delete -f config.yaml -p /myapp
 ```
 
 ### Tree from SSM
 ```bash
-aws-ssm-util tree -p /myapp
+aws-ssm tree -p /myapp
 ```
 
 ### Tree from YAML
 ```bash
-aws-ssm-util yaml-tree -f config.yaml
+aws-ssm yaml-tree -f config.yaml
 ```
 
 #### Example output
@@ -96,29 +96,29 @@ root
 
 ### Bash
 ```bash
-source <(aws-ssm-util completion bash)
+source <(aws-ssm completion bash)
 # Or persist:
-aws-ssm-util completion bash > /etc/bash_completion.d/aws-ssm-util
+aws-ssm completion bash > /etc/bash_completion.d/aws-ssm
 ```
 
 ### Zsh
 ```bash
 echo "autoload -U compinit; compinit" >> ~/.zshrc
-aws-ssm-util completion zsh > ${fpath[1]}/_aws-ssm-util
+aws-ssm completion zsh > ${fpath[1]}/_aws-ssm
 ```
 
 ---
 
 ## 🧰 Contributing
 
-Report issues/questions/feature requests on in the [issues](https://github.com/mbevc1/aws-ssm-util/issues/new) section.
+Report issues/questions/feature requests on in the [issues](https://github.com/mbevc1/aws-ssm/issues/new) section.
 
 Full contributing [guidelines are covered here](.github/CONTRIBUTING.md).
 
 ## Authors
 
 * [Marko Bevc](https://github.com/mbevc1)
-* Full [contributors list](https://github.com/mbevc1/aws-ssm-util/graphs/contributors)
+* Full [contributors list](https://github.com/mbevc1/aws-ssm/graphs/contributors)
 
 ## 📄 License
 

@@ -27,7 +27,7 @@ go.work.sum
 build/
 dist/
 vendor/
-aws-ssm-util
+aws-ssm
 
 # App config
 config.json

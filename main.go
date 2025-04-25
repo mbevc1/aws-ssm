@@ -1,7 +1,7 @@
 package main
 
 import (
-	"aws-ssm-util/cmd"
+	"aws-ssm/cmd"
 	"fmt"
 )
 

@@ -1,5 +1,5 @@
 version: 2
-project_name: aws-ssm-util
+project_name: aws-ssm
 
 source:
   enabled: false
@@ -15,7 +15,7 @@ env:
 #    #- go mod download
 
 builds:
-  - binary: aws-ssm-util
+  - binary: aws-ssm
     #main: ./main.go
     #goos:
     #  - linux
@@ -33,15 +33,15 @@ builds:
       - GOTELEMETRY="off"
     flags:
       - -v
-    #ldflags: -X github.com/mbevc1/aws-ssm-util/main.Version={{.Env.VERSION}}
+    #ldflags: -X github.com/mbevc1/aws-ssm/main.Version={{.Env.VERSION}}
 
 upx:
   - enabled: true
 
 archives:
-  - id: aws-ssm-util
+  - id: aws-ssm
     #builds:
-    #  - aws-ssm-util|default
+    #  - aws-ssm|default
     #format: zip
     #name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
     format_overrides:
@@ -67,7 +67,7 @@ release:
   disable: false
   name_template: "v{{ .Version }}"
   footer: |
-    **Full Changelog**: https://github.com/mbevc1/aws-ssm-util/compare/{{ .PreviousTag }}...{{ if .IsNightly }}nightly{{ else }}{{ .Tag }}{{ end }}
+    **Full Changelog**: https://github.com/mbevc1/aws-ssm/compare/{{ .PreviousTag }}...{{ if .IsNightly }}nightly{{ else }}{{ .Tag }}{{ end }}
 
 milestones:
   - close: true
