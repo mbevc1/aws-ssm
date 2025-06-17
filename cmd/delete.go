@@ -65,7 +65,7 @@ var deleteCmd = &cobra.Command{
 		for _, key := range flatKeys {
 			out, err := client.GetParameter(ctx, &ssm.GetParameterInput{
 				Name:           aws.String(key),
-				WithDecryption: false,
+				WithDecryption: aws.Bool(false),
 			})
 			if err == nil {
 				typedKeys[key] = out.Parameter.Type

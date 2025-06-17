@@ -105,7 +105,7 @@ func loadConfig(cfg interface{}, path string, client *ssm.Client) error {
 			Name:      aws.String(path),
 			Value:     aws.String(valueStr),
 			Type:      paramType,
-			Overwrite: overwrite,
+			Overwrite: aws.Bool(overwrite),
 		})
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "❌ Failed to upload %s: %v\n", color.New(color.FgWhite, color.Bold).Sprint(path), color.New(color.FgRed).Sprint(extractMessage(err)))
