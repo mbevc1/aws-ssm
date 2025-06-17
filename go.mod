@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.36.4
 	github.com/aws/aws-sdk-go-v2/config v1.29.16
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.25.0
-	github.com/aws/smithy-go v1.22.2
+	github.com/aws/smithy-go v1.22.4
 	github.com/fatih/color v1.18.0
 	github.com/spf13/cobra v1.7.0
 	gopkg.in/yaml.v3 v3.0.1
