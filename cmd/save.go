@@ -63,8 +63,8 @@ func fetchAllParameters(prefix string, client *ssm.Client) (map[string]string, e
 	for {
 		input := &ssm.GetParametersByPathInput{
 			Path:           aws.String(prefix),
-			Recursive:      true,
-			WithDecryption: true,
+			Recursive:      aws.Bool(true),
+			WithDecryption: aws.Bool(true),
 			NextToken:      nil,
 		}
 		if *nextToken != "" {
