@@ -23,7 +23,7 @@ $(BIN): ## Produce binary
 	@echo "🔨 Building $(BINARY_NAME)..."
 	GO111MODULE=on $(GO_BUILD)
 	@echo "✅ Built binary $(BIN)"
-	upx $@
+	#upx $@
 
 vendor: **/*.go ## Build vendor deps
 	GO111MODULE=on $(GO_VENDOR)
