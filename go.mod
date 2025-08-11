@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/aws/aws-sdk-go-v2 v1.37.2
 	github.com/aws/aws-sdk-go-v2/config v1.30.3
-	github.com/aws/aws-sdk-go-v2/service/ssm v1.61.1
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.62.0
 	github.com/aws/smithy-go v1.22.5
 	github.com/fatih/color v1.18.0
 	github.com/spf13/cobra v1.9.1
