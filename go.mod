@@ -5,7 +5,7 @@ go 1.25
 require (
 	github.com/aws/aws-sdk-go-v2 v1.40.0
 	github.com/aws/aws-sdk-go-v2/config v1.32.2
-	github.com/aws/aws-sdk-go-v2/service/ssm v1.67.3
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.67.4
 	github.com/aws/smithy-go v1.24.0
 	github.com/fatih/color v1.18.0
 	github.com/spf13/cobra v1.10.1
