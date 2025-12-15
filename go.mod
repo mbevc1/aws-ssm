@@ -3,7 +3,7 @@ module aws-ssm
 go 1.25
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.40.1
+	github.com/aws/aws-sdk-go-v2 v1.41.0
 	github.com/aws/aws-sdk-go-v2/config v1.32.3
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.67.5
 	github.com/aws/smithy-go v1.24.0
